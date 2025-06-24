@@ -17,7 +17,7 @@ class ListNode {
     }
 }
 
-public class Solution {
+public class Solution_MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode();
         ListNode current = head;

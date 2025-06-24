@@ -1,5 +1,5 @@
 
-public class Solution {
+public class Solution_FindMinimumInRotatedArray {
     public int findMin(int[] nums) {
         int left =0, right =nums.length-1;
         while (left < right) {

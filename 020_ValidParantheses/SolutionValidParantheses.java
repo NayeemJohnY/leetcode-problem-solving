@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Stack;
 
 
-class Solution {
+class SolutionValidParantheses {
     public boolean isValid(String s) {
     Stack<Character> stack = new Stack<>();
     // boolean valid = true;

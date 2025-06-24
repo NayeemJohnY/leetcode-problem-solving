@@ -1,7 +1,7 @@
 
 import java.util.HashSet;
 
-public class Solution {
+public class Solution_ContainsDuplicate {
     
     public boolean containsDuplicate(int[] nums) {
         // Solution 1
@@ -30,7 +30,7 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution_ContainsDuplicate solution = new Solution_ContainsDuplicate();
         System.out.println("Hello");
         System.out.println(solution.containsDuplicate(new int[]{1, 2, 3, 1}));
         System.out.println(solution.containsDuplicate(new int[]{1, 2, 3, 4}));
