@@ -1,6 +1,7 @@
+// https://leetcode.com/problems/two-sum/description/
 import java.util.HashMap;
 
-public class Solution_TwoSum {
+public class LC_1_TwoSum {
     public int[] twoSum(int[] nums, int target) {
         for (int index = 0; index < nums.length; index++) {
             for (int j = index + 1; j < nums.length; j++) {
@@ -24,32 +25,9 @@ public class Solution_TwoSum {
     }
 
     public static void main(String[] args) {
-        Solution_TwoSum solution = new Solution_TwoSum();
+        LC_1_TwoSum solution = new LC_1_TwoSum();
         int[] indexes = solution.towSumHashMap(new int[] { 1, 2, 4, 5, 7, 8 }, 5);
         System.out.println(indexes[0] + " " + indexes[1]);
     }
 
 }
-
-// class Solution {
-// public int firstUniqChar(String s) {
-// HashMap<Character, Integer> map = new HashMap<>();
-// for (int i=0; i<s.length(); i++){
-// char charc = s.charAt(i);
-// if (map.containsKey(charc)){
-// map.put(charc, map.get(charc) + 1);
-// }
-// else {
-// map.put(charc, 1);
-// }
-// }
-// System.out.println(map);
-// for (Map.Entry<Character, Integer> e : map.entrySet()){
-// if (e.getValue() == 1){
-// return s.indexOf(e.getKey());
-// }
-// }
-// return -1;
-
-// }
-// }

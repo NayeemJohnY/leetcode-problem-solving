@@ -1,8 +1,9 @@
+// https://leetcode.com/problems/valid-parentheses/
 import java.util.HashMap;
 import java.util.Stack;
 
 
-class SolutionValidParantheses {
+class LC_20_ValidParantheses {
     public boolean isValid(String s) {
     Stack<Character> stack = new Stack<>();
     // boolean valid = true;
@@ -51,3 +52,4 @@ class SolutionValidParantheses {
     }
 
 }
+        

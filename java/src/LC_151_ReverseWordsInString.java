@@ -1,4 +1,5 @@
-public class Solution_ReverseWordsInString {
+// https://leetcode.com/problems/reverse-words-in-a-string
+public class LC_151_ReverseWordsInString {
     public String reverseWords(String s) {
         String output =  "";
         String[] substr = s.split("\s");
@@ -14,3 +15,5 @@ public class Solution_ReverseWordsInString {
         return output.trim();
     }
 }
+
+                

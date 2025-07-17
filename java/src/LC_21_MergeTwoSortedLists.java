@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/merge-two-sorted-lists
 
 // Definition for singly-linked list.
 class ListNode {
@@ -17,7 +18,7 @@ class ListNode {
     }
 }
 
-public class Solution_MergeTwoSortedLists {
+public class LC_21_MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode();
         ListNode current = head;

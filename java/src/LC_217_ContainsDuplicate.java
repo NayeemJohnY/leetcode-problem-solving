@@ -1,7 +1,8 @@
+// https://leetcode.com/problems/contains-duplicate/
 
 import java.util.HashSet;
 
-public class Solution_ContainsDuplicate {
+public class LC_217_ContainsDuplicate {
     
     public boolean containsDuplicate(int[] nums) {
         // Solution 1
@@ -17,7 +18,6 @@ public class Solution_ContainsDuplicate {
         // Solution 2
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++){
-            System.out.println(set);
             if (set.contains(nums[i])){
                 return true;
             }
@@ -30,8 +30,7 @@ public class Solution_ContainsDuplicate {
 
 
     public static void main(String[] args) {
-        Solution_ContainsDuplicate solution = new Solution_ContainsDuplicate();
-        System.out.println("Hello");
+        LC_217_ContainsDuplicate solution = new LC_217_ContainsDuplicate();
         System.out.println(solution.containsDuplicate(new int[]{1, 2, 3, 1}));
         System.out.println(solution.containsDuplicate(new int[]{1, 2, 3, 4}));
         System.out.println(solution.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));

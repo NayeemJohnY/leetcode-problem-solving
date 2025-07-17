@@ -1,7 +1,10 @@
+//  https://leetcode.com/problems/longest-substring-without-repeating-characters
+
 import java.util.HashSet;
 
-public class SOlution_LongestSubstring {
-    public void lengthOfLongestSubstring(String s) {
+public class LC_3_LongestSubstringWithoutRepeatChars {
+
+       public void lengthOfLongestSubstring(String s) {
         int left = 0, right = 0, maxLength = 0;
         HashSet<Character> charactersSet = new HashSet<>();
         while (right < s.length()) {
@@ -19,7 +22,7 @@ public class SOlution_LongestSubstring {
     }
 
     public static void main(String[] args) {
-        SOlution_LongestSubstring solution = new SOlution_LongestSubstring();
+        LC_3_LongestSubstringWithoutRepeatChars solution = new LC_3_LongestSubstringWithoutRepeatChars();
         solution.lengthOfLongestSubstring("abcabcbb");
         solution.lengthOfLongestSubstring("bbbbbb");
         solution.lengthOfLongestSubstring("pwwkew");

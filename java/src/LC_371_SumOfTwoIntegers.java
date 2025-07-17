@@ -1,10 +1,10 @@
+// https://leetcode.com/problems/sum-of-two-integers
 
-public class Solution_SumOfTwoIntegers {
+public class LC_371_SumOfTwoIntegers {
 
     public void bitwiseSum(int a, int b) {
-        int sum = 0;
         while (b != 0) {
-            sum = a ^ b;
+            int sum = a ^ b;
             b = (a & b) << 1;
             a = sum;
         }
@@ -12,7 +12,7 @@ public class Solution_SumOfTwoIntegers {
     }
 
     public static void main(String[] args) {
-        Solution_SumOfTwoIntegers solution = new Solution_SumOfTwoIntegers();
+        LC_371_SumOfTwoIntegers solution = new LC_371_SumOfTwoIntegers();
         solution.bitwiseSum(10, 29);
         solution.bitwiseSum(-21, 2);
         solution.bitwiseSum(5, -7);

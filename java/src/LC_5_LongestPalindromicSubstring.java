@@ -1,4 +1,6 @@
-public class Solution_LongestPalindromicSubstring {
+// https://leetcode.com/problems/longest-palindromic-substring
+
+public class LC_5_LongestPalindromicSubstring {
 
     public int expandAroundCenter(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
@@ -26,7 +28,7 @@ public class Solution_LongestPalindromicSubstring {
     }
 
     public static void main(String[] args) {
-        Solution_LongestPalindromicSubstring solution = new Solution_LongestPalindromicSubstring();
+        LC_5_LongestPalindromicSubstring solution = new LC_5_LongestPalindromicSubstring();
         solution.lenOfLongestPalindromicSubstring("babad");
         solution.lenOfLongestPalindromicSubstring("cbbd");
         solution.lenOfLongestPalindromicSubstring("madam");
