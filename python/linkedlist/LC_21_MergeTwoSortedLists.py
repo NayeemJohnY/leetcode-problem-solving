@@ -1,10 +1,6 @@
 # https://leetcode.com/problems/merge-two-sorted-lists
-# Definition for singly-linked list.
 from typing import Optional
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from linkedlist.listnode import ListNode
 
 
 class Solution:
@@ -19,6 +15,6 @@ class Solution:
                 current.next = list2
                 list2 = list2.next
             current = current.next
-        
+
         current.next = list1 or list2
         return head.next

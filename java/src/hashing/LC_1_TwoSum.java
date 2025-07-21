@@ -11,6 +11,7 @@ public class LC_1_TwoSum {
                 }
             }
         }
+        
         return new int[] {};
     }
 
